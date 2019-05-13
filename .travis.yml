@@ -8,6 +8,7 @@ addons:
     packages:
     - libc++-7-dev
     - libc++abi-7-dev
+    - doxygen
     update: true
 install:
 - pip install --user conan
