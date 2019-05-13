@@ -1,0 +1,52 @@
+\hypertarget{print__ip_8h}{}\section{src/print\+\_\+ip.h File Reference}
+\label{print__ip_8h}\index{src/print\+\_\+ip.\+h@{src/print\+\_\+ip.\+h}}
+
+
+File contains print\+\_\+ip function family.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$type\+\_\+traits$>$}\\*
+{\ttfamily \#include \char`\"{}type\+\_\+traits.\+h\char`\"{}}\\*
+Include dependency graph for print\+\_\+ip.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegriha}{griha}
+\item 
+ \hyperlink{namespacegriha_1_1details}{griha\+::details}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Fwd\+It , typename CharT $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_a0bb6a1ac333160e0c516e3c6af2ea8f6}{griha\+::details\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, Fwd\+It f, Fwd\+It l)
+\item 
+{\footnotesize template$<$size\+\_\+t I, typename CharT , typename... Args$>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_aa298e5a3200d5b4b8f1833ba2736dabc}{griha\+::details\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::tuple$<$ Args... $>$ \&ip)
+\item 
+{\footnotesize template$<$typename CharT , typename... Args$>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_ae436fa4f3b9609914597737b2a61abc9}{griha\+::details\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::tuple$<$ Args... $>$ \&ip)
+\item 
+{\footnotesize template$<$typename CharT $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_a96b354d613153a0e77c127911a2e1ae0}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::basic\+\_\+string$<$ CharT $>$ \&ip)
+\item 
+{\footnotesize template$<$typename CharT , typename Char\+T2 , size\+\_\+t N$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ is\+\_\+character\+\_\+v$<$ Char\+T2 $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_adb22fea7479742dc1c0a3d7c7995fc0b}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, Char\+T2(\&ip)\mbox{[}N\mbox{]})
+\item 
+{\footnotesize template$<$typename CharT , typename IntT $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$ IntT $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_a4b0d906169c2b4c51fe323184bbc8f44}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, IntT ip)
+\item 
+{\footnotesize template$<$typename CharT , typename IntT , size\+\_\+t N$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$ IntT $>$ \&\&!is\+\_\+character\+\_\+v$<$ IntT $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_aaa000663a06d833560a824a34a5ae42c}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, IntT(\&ip)\mbox{[}N\mbox{]})
+\item 
+{\footnotesize template$<$typename CharT , typename ContT $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+member\+\_\+function\+\_\+pointer\+\_\+v$<$ decltype(\&Cont\+T\+::cbegin)$>$ \&\&std\+::is\+\_\+member\+\_\+function\+\_\+pointer\+\_\+v$<$ decltype(\&Cont\+T\+::cend)$>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_a11ead801358ba902938ff6dcb9ac4da2}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const ContT \&ip)
+\item 
+{\footnotesize template$<$typename CharT , typename... Args$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ is\+\_\+all\+\_\+same\+\_\+v$<$ Args... $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_acd1e1da8a6524b3c7521bc759da1c3ae}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::tuple$<$ Args... $>$ \&ip)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File contains print\+\_\+ip function family. 
+
+This function can print IP address represented by std\+::string object, string literal as {\ttfamily \char`\"{}192.\+168.\+1.\+1\char`\"{}} with null-\/terminated symbol, integral type as {\ttfamily char}, {\ttfamily short}, {\ttfamily int}, {\ttfamily long} and etc, array of values of integral type, and container and tuple of same types elements
+
+\begin{DoxyAuthor}{Author}
+griha \href{mailto:gpgolikov@gmail.com}{\tt gpgolikov@gmail.\+com} 
+\end{DoxyAuthor}

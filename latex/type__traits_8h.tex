@@ -1,0 +1,42 @@
+\hypertarget{type__traits_8h}{}\section{src/type\+\_\+traits.h File Reference}
+\label{type__traits_8h}\index{src/type\+\_\+traits.\+h@{src/type\+\_\+traits.\+h}}
+{\ttfamily \#include $<$type\+\_\+traits$>$}\\*
+Include dependency graph for type\+\_\+traits.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgriha_1_1is__one__of}{griha\+::is\+\_\+one\+\_\+of$<$ T, Args $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__one__of_3_01_t_01_4}{griha\+::is\+\_\+one\+\_\+of$<$ T $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__one__of_3_01_t_00_01_t_00_01_args_8_8_8_01_4}{griha\+::is\+\_\+one\+\_\+of$<$ T, T, Args... $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__one__of_3_01_t_00_01_u_00_01_args_8_8_8_01_4}{griha\+::is\+\_\+one\+\_\+of$<$ T, U, Args... $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__all__same}{griha\+::is\+\_\+all\+\_\+same$<$ Args $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__all__same_3_01_t_01_4}{griha\+::is\+\_\+all\+\_\+same$<$ T $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__all__same_3_01_t_00_01_t_01_4}{griha\+::is\+\_\+all\+\_\+same$<$ T, T $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__all__same_3_01_t_00_01_u_00_01_args_8_8_8_01_4}{griha\+::is\+\_\+all\+\_\+same$<$ T, U, Args... $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__all__same_3_01_t_00_01_t_00_01_args_8_8_8_01_4}{griha\+::is\+\_\+all\+\_\+same$<$ T, T, Args... $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegriha}{griha}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\constexpr auto \hyperlink{namespacegriha_a4143946f18648e253a58b1ecd283a657}{griha\+::is\+\_\+one\+\_\+of\+\_\+v} = is\+\_\+one\+\_\+of$<$T, Args...$>$\+::value
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\constexpr auto \hyperlink{namespacegriha_a3c9eb374b11b670884dfabc46b7bbc23}{griha\+::is\+\_\+all\+\_\+same\+\_\+v} = is\+\_\+all\+\_\+same$<$Args...$>$\+::value
+\item 
+{\footnotesize template$<$typename T $>$ }\\constexpr auto \hyperlink{namespacegriha_af6e5a84a5dad7d2123491eb7124aa2e3}{griha\+::is\+\_\+character\+\_\+v} = is\+\_\+one\+\_\+of\+\_\+v$<$std\+::decay\+\_\+t$<$T$>$, char, wchar\+\_\+t, char16\+\_\+t, char32\+\_\+t$>$
+\end{DoxyCompactItemize}

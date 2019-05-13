@@ -1,0 +1,115 @@
+\hypertarget{namespacegriha}{}\section{griha Namespace Reference}
+\label{namespacegriha}\index{griha@{griha}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegriha_1_1details}{details}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgriha_1_1is__all__same}{is\+\_\+all\+\_\+same}
+\item 
+struct \hyperlink{structgriha_1_1is__all__same_3_01_t_01_4}{is\+\_\+all\+\_\+same$<$ T $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__all__same_3_01_t_00_01_t_01_4}{is\+\_\+all\+\_\+same$<$ T, T $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__all__same_3_01_t_00_01_t_00_01_args_8_8_8_01_4}{is\+\_\+all\+\_\+same$<$ T, T, Args... $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__all__same_3_01_t_00_01_u_00_01_args_8_8_8_01_4}{is\+\_\+all\+\_\+same$<$ T, U, Args... $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__one__of}{is\+\_\+one\+\_\+of}
+\item 
+struct \hyperlink{structgriha_1_1is__one__of_3_01_t_01_4}{is\+\_\+one\+\_\+of$<$ T $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__one__of_3_01_t_00_01_t_00_01_args_8_8_8_01_4}{is\+\_\+one\+\_\+of$<$ T, T, Args... $>$}
+\item 
+struct \hyperlink{structgriha_1_1is__one__of_3_01_t_00_01_u_00_01_args_8_8_8_01_4}{is\+\_\+one\+\_\+of$<$ T, U, Args... $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename CharT $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_a96b354d613153a0e77c127911a2e1ae0}{print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::basic\+\_\+string$<$ CharT $>$ \&ip)
+\item 
+{\footnotesize template$<$typename CharT , typename Char\+T2 , size\+\_\+t N$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{namespacegriha_af6e5a84a5dad7d2123491eb7124aa2e3}{is\+\_\+character\+\_\+v}$<$ Char\+T2 $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_adb22fea7479742dc1c0a3d7c7995fc0b}{print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, Char\+T2(\&ip)\mbox{[}N\mbox{]})
+\item 
+{\footnotesize template$<$typename CharT , typename IntT $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$ IntT $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_a4b0d906169c2b4c51fe323184bbc8f44}{print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, IntT ip)
+\item 
+{\footnotesize template$<$typename CharT , typename IntT , size\+\_\+t N$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$ IntT $>$ \&\&!\hyperlink{namespacegriha_af6e5a84a5dad7d2123491eb7124aa2e3}{is\+\_\+character\+\_\+v}$<$ IntT $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_aaa000663a06d833560a824a34a5ae42c}{print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, IntT(\&ip)\mbox{[}N\mbox{]})
+\item 
+{\footnotesize template$<$typename CharT , typename ContT $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+member\+\_\+function\+\_\+pointer\+\_\+v$<$ decltype(\&Cont\+T\+::cbegin)$>$ \&\&std\+::is\+\_\+member\+\_\+function\+\_\+pointer\+\_\+v$<$ decltype(\&Cont\+T\+::cend)$>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_a11ead801358ba902938ff6dcb9ac4da2}{print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const ContT \&ip)
+\item 
+{\footnotesize template$<$typename CharT , typename... Args$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{namespacegriha_a3c9eb374b11b670884dfabc46b7bbc23}{is\+\_\+all\+\_\+same\+\_\+v}$<$ Args... $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_acd1e1da8a6524b3c7521bc759da1c3ae}{print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::tuple$<$ Args... $>$ \&ip)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\constexpr auto \hyperlink{namespacegriha_a4143946f18648e253a58b1ecd283a657}{is\+\_\+one\+\_\+of\+\_\+v} = \hyperlink{structgriha_1_1is__one__of}{is\+\_\+one\+\_\+of}$<$T, Args...$>$\+::value
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\constexpr auto \hyperlink{namespacegriha_a3c9eb374b11b670884dfabc46b7bbc23}{is\+\_\+all\+\_\+same\+\_\+v} = \hyperlink{structgriha_1_1is__all__same}{is\+\_\+all\+\_\+same}$<$Args...$>$\+::value
+\item 
+{\footnotesize template$<$typename T $>$ }\\constexpr auto \hyperlink{namespacegriha_af6e5a84a5dad7d2123491eb7124aa2e3}{is\+\_\+character\+\_\+v} = \hyperlink{namespacegriha_a4143946f18648e253a58b1ecd283a657}{is\+\_\+one\+\_\+of\+\_\+v}$<$std\+::decay\+\_\+t$<$T$>$, char, wchar\+\_\+t, char16\+\_\+t, char32\+\_\+t$>$
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{griha@{griha}!print\+\_\+ip@{print\+\_\+ip}}
+\index{print\+\_\+ip@{print\+\_\+ip}!griha@{griha}}
+\subsubsection[{\texorpdfstring{print\+\_\+ip(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, const std\+::basic\+\_\+string$<$ Char\+T $>$ \&ip)}{print_ip(std::basic_ostream< CharT > &os, const std::basic_string< CharT > &ip)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT $>$ std\+::basic\+\_\+ostream$<$CharT$>$\& griha\+::print\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ CharT $>$ \&}]{os, }
+\item[{const std\+::basic\+\_\+string$<$ CharT $>$ \&}]{ip}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacegriha_a96b354d613153a0e77c127911a2e1ae0}{}\label{namespacegriha_a96b354d613153a0e77c127911a2e1ae0}
+\index{griha@{griha}!print\+\_\+ip@{print\+\_\+ip}}
+\index{print\+\_\+ip@{print\+\_\+ip}!griha@{griha}}
+\subsubsection[{\texorpdfstring{print\+\_\+ip(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, Char\+T2(\&ip)[N])}{print_ip(std::basic_ostream< CharT > &os, CharT2(&ip)[N])}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT , typename Char\+T2 , size\+\_\+t N$>$ std\+::enable\+\_\+if\+\_\+t$<$ {\bf is\+\_\+character\+\_\+v}$<$Char\+T2$>$, std\+::basic\+\_\+ostream$<$CharT$>$\&$>$ griha\+::print\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ CharT $>$ \&}]{os, }
+\item[{Char\+T2(\&)}]{ip\mbox{[}\+N\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacegriha_adb22fea7479742dc1c0a3d7c7995fc0b}{}\label{namespacegriha_adb22fea7479742dc1c0a3d7c7995fc0b}
+\index{griha@{griha}!print\+\_\+ip@{print\+\_\+ip}}
+\index{print\+\_\+ip@{print\+\_\+ip}!griha@{griha}}
+\subsubsection[{\texorpdfstring{print\+\_\+ip(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, Int\+T ip)}{print_ip(std::basic_ostream< CharT > &os, IntT ip)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT , typename IntT $>$ std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$IntT$>$, std\+::basic\+\_\+ostream$<$CharT$>$\&$>$ griha\+::print\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ CharT $>$ \&}]{os, }
+\item[{IntT}]{ip}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacegriha_a4b0d906169c2b4c51fe323184bbc8f44}{}\label{namespacegriha_a4b0d906169c2b4c51fe323184bbc8f44}
+\index{griha@{griha}!print\+\_\+ip@{print\+\_\+ip}}
+\index{print\+\_\+ip@{print\+\_\+ip}!griha@{griha}}
+\subsubsection[{\texorpdfstring{print\+\_\+ip(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, Int\+T(\&ip)[N])}{print_ip(std::basic_ostream< CharT > &os, IntT(&ip)[N])}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT , typename IntT , size\+\_\+t N$>$ std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$IntT$>$ \&\& !{\bf is\+\_\+character\+\_\+v}$<$IntT$>$, std\+::basic\+\_\+ostream$<$CharT$>$\&$>$ griha\+::print\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ CharT $>$ \&}]{os, }
+\item[{IntT(\&)}]{ip\mbox{[}\+N\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacegriha_aaa000663a06d833560a824a34a5ae42c}{}\label{namespacegriha_aaa000663a06d833560a824a34a5ae42c}
+\index{griha@{griha}!print\+\_\+ip@{print\+\_\+ip}}
+\index{print\+\_\+ip@{print\+\_\+ip}!griha@{griha}}
+\subsubsection[{\texorpdfstring{print\+\_\+ip(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, const Cont\+T \&ip)}{print_ip(std::basic_ostream< CharT > &os, const ContT &ip)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT , typename ContT $>$ std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+member\+\_\+function\+\_\+pointer\+\_\+v$<$decltype(\&Cont\+T\+::cbegin)$>$ \&\& std\+::is\+\_\+member\+\_\+function\+\_\+pointer\+\_\+v$<$decltype(\&Cont\+T\+::cend)$>$, std\+::basic\+\_\+ostream$<$CharT$>$\&$>$ griha\+::print\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ CharT $>$ \&}]{os, }
+\item[{const ContT \&}]{ip}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacegriha_a11ead801358ba902938ff6dcb9ac4da2}{}\label{namespacegriha_a11ead801358ba902938ff6dcb9ac4da2}
+\index{griha@{griha}!print\+\_\+ip@{print\+\_\+ip}}
+\index{print\+\_\+ip@{print\+\_\+ip}!griha@{griha}}
+\subsubsection[{\texorpdfstring{print\+\_\+ip(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, const std\+::tuple$<$ Args... $>$ \&ip)}{print_ip(std::basic_ostream< CharT > &os, const std::tuple< Args... > &ip)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT , typename... Args$>$ std\+::enable\+\_\+if\+\_\+t$<$ {\bf is\+\_\+all\+\_\+same\+\_\+v}$<$Args...$>$, std\+::basic\+\_\+ostream$<$CharT$>$\&$>$ griha\+::print\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ CharT $>$ \&}]{os, }
+\item[{const std\+::tuple$<$ Args... $>$ \&}]{ip}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacegriha_acd1e1da8a6524b3c7521bc759da1c3ae}{}\label{namespacegriha_acd1e1da8a6524b3c7521bc759da1c3ae}
+
+
+\subsection{Variable Documentation}
+\index{griha@{griha}!is\+\_\+all\+\_\+same\+\_\+v@{is\+\_\+all\+\_\+same\+\_\+v}}
+\index{is\+\_\+all\+\_\+same\+\_\+v@{is\+\_\+all\+\_\+same\+\_\+v}!griha@{griha}}
+\subsubsection[{\texorpdfstring{is\+\_\+all\+\_\+same\+\_\+v}{is_all_same_v}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ constexpr auto griha\+::is\+\_\+all\+\_\+same\+\_\+v = {\bf is\+\_\+all\+\_\+same}$<$Args...$>$\+::value}\hypertarget{namespacegriha_a3c9eb374b11b670884dfabc46b7bbc23}{}\label{namespacegriha_a3c9eb374b11b670884dfabc46b7bbc23}
+\index{griha@{griha}!is\+\_\+character\+\_\+v@{is\+\_\+character\+\_\+v}}
+\index{is\+\_\+character\+\_\+v@{is\+\_\+character\+\_\+v}!griha@{griha}}
+\subsubsection[{\texorpdfstring{is\+\_\+character\+\_\+v}{is_character_v}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ constexpr auto griha\+::is\+\_\+character\+\_\+v = {\bf is\+\_\+one\+\_\+of\+\_\+v}$<$std\+::decay\+\_\+t$<$T$>$, char, wchar\+\_\+t, char16\+\_\+t, char32\+\_\+t$>$}\hypertarget{namespacegriha_af6e5a84a5dad7d2123491eb7124aa2e3}{}\label{namespacegriha_af6e5a84a5dad7d2123491eb7124aa2e3}
+\index{griha@{griha}!is\+\_\+one\+\_\+of\+\_\+v@{is\+\_\+one\+\_\+of\+\_\+v}}
+\index{is\+\_\+one\+\_\+of\+\_\+v@{is\+\_\+one\+\_\+of\+\_\+v}!griha@{griha}}
+\subsubsection[{\texorpdfstring{is\+\_\+one\+\_\+of\+\_\+v}{is_one_of_v}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename... Args$>$ constexpr auto griha\+::is\+\_\+one\+\_\+of\+\_\+v = {\bf is\+\_\+one\+\_\+of}$<$T, Args...$>$\+::value}\hypertarget{namespacegriha_a4143946f18648e253a58b1ecd283a657}{}\label{namespacegriha_a4143946f18648e253a58b1ecd283a657}
