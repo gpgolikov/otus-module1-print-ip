@@ -9,6 +9,7 @@ addons:
     - libc++-7-dev
     - libc++abi-7-dev
     - doxygen
+    - graphviz
     update: true
 install:
 - pip install --user conan

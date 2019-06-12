@@ -2,6 +2,7 @@
 #include <vector>
 #include <list>
 #include <tuple>
+#include <array>
 
 #include "print_ip.h"
 
@@ -24,6 +25,8 @@ int main() {
     print_ip(cout, list<int> {0, 0, 0, 0});
     endl(cout);
     print_ip(cout, make_tuple(100, 100, 100, 100));
+    endl(cout);
+    print_ip(cout, array<const char*, 4>{ "127", "0", "0", "1" });
     endl(cout);
 
     return 0;
