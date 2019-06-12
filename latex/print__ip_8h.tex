@@ -9,9 +9,21 @@ File contains print\+\_\+ip function family.
 {\ttfamily \#include $<$type\+\_\+traits$>$}\\*
 {\ttfamily \#include \char`\"{}type\+\_\+traits.\+h\char`\"{}}\\*
 Include dependency graph for print\+\_\+ip.\+h\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{print__ip_8h__incl}
+\end{center}
+\end{figure}
 This graph shows which files directly or indirectly include this file\+:
-% FIG 1
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{print__ip_8h__dep__incl}
+\end{center}
+\end{figure}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,7 +34,11 @@ This graph shows which files directly or indirectly include this file\+:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename Fwd\+It , typename CharT $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_a0bb6a1ac333160e0c516e3c6af2ea8f6}{griha\+::details\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, Fwd\+It f, Fwd\+It l)
+{\footnotesize template$<$typename CharT , typename T $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_a966af4f61766b1644d2221093035aa94}{griha\+::details\+::print\+\_\+ip\+\_\+first\+\_\+part} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const T \&value)
+\item 
+{\footnotesize template$<$typename CharT , typename T $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_a598409443fccf1540c197b012f836d5f}{griha\+::details\+::print\+\_\+ip\+\_\+part} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const T \&value)
+\item 
+{\footnotesize template$<$typename CharT , typename It $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_aab9e1f097918e95aff6ba4c040865632}{griha\+::details\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, It f, It l)
 \item 
 {\footnotesize template$<$size\+\_\+t I, typename CharT , typename... Args$>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_aa298e5a3200d5b4b8f1833ba2736dabc}{griha\+::details\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::tuple$<$ Args... $>$ \&ip)
 \item 
@@ -30,15 +46,17 @@ This graph shows which files directly or indirectly include this file\+:
 \item 
 {\footnotesize template$<$typename CharT $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_a96b354d613153a0e77c127911a2e1ae0}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::basic\+\_\+string$<$ CharT $>$ \&ip)
 \item 
-{\footnotesize template$<$typename CharT , typename Char\+T2 , size\+\_\+t N$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ is\+\_\+character\+\_\+v$<$ Char\+T2 $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_adb22fea7479742dc1c0a3d7c7995fc0b}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, Char\+T2(\&ip)\mbox{[}N\mbox{]})
+{\footnotesize template$<$typename CharT , typename Char\+T2 , size\+\_\+t N$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ is\+\_\+character\+\_\+v$<$ Char\+T2 $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_a817be22c2aa82d5baf17c5017e55691e}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, Char\+T2(\&ip)\mbox{[}N\mbox{]})
 \item 
-{\footnotesize template$<$typename CharT , typename IntT $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$ IntT $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_a4b0d906169c2b4c51fe323184bbc8f44}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, IntT ip)
+{\footnotesize template$<$typename CharT , typename IntT , size\+\_\+t N$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ !is\+\_\+character\+\_\+v$<$ IntT $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_ad85213a0206e4696a1896ef86a2f5fe2}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, IntT(\&ip)\mbox{[}N\mbox{]})
 \item 
-{\footnotesize template$<$typename CharT , typename IntT , size\+\_\+t N$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$ IntT $>$ \&\&!is\+\_\+character\+\_\+v$<$ IntT $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_aaa000663a06d833560a824a34a5ae42c}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, IntT(\&ip)\mbox{[}N\mbox{]})
+{\footnotesize template$<$typename CharT , typename IntT $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$ IntT $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_a0d818d9e193ea017b59d92f90a34655e}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, IntT ip)
 \item 
-{\footnotesize template$<$typename CharT , typename ContT $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+member\+\_\+function\+\_\+pointer\+\_\+v$<$ decltype(\&Cont\+T\+::cbegin)$>$ \&\&std\+::is\+\_\+member\+\_\+function\+\_\+pointer\+\_\+v$<$ decltype(\&Cont\+T\+::cend)$>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_a11ead801358ba902938ff6dcb9ac4da2}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const ContT \&ip)
+{\footnotesize template$<$typename CharT , typename ContT $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ decltype(std\+::declval$<$ ContT $>$).begin()), decltype(std\+::declval$<$ ContT $>$).end()) $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_aec9b9d0da27b12b55e2219bf5f643441}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const ContT \&ip)
 \item 
-{\footnotesize template$<$typename CharT , typename... Args$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ is\+\_\+all\+\_\+same\+\_\+v$<$ Args... $>$, std\+::basic\+\_\+ostream$<$ CharT $>$ \& $>$ \hyperlink{namespacegriha_acd1e1da8a6524b3c7521bc759da1c3ae}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::tuple$<$ Args... $>$ \&ip)
+{\footnotesize template$<$typename CharT , typename T $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_ace3784a170d7c105da4112afc66282a8}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::initializer\+\_\+list$<$ T $>$ \&ip)
+\item 
+{\footnotesize template$<$typename CharT , typename... Args$>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_a0447b82916ce6af203921f27f996f3c7}{griha\+::print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::tuple$<$ Args... $>$ \&ip)
 \end{DoxyCompactItemize}
 
 

@@ -3,7 +3,11 @@
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename Fwd\+It , typename CharT $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_a0bb6a1ac333160e0c516e3c6af2ea8f6}{print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, Fwd\+It f, Fwd\+It l)
+{\footnotesize template$<$typename CharT , typename T $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_a966af4f61766b1644d2221093035aa94}{print\+\_\+ip\+\_\+first\+\_\+part} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const T \&value)
+\item 
+{\footnotesize template$<$typename CharT , typename T $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_a598409443fccf1540c197b012f836d5f}{print\+\_\+ip\+\_\+part} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const T \&value)
+\item 
+{\footnotesize template$<$typename CharT , typename It $>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_aab9e1f097918e95aff6ba4c040865632}{print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, It f, It l)
 \item 
 {\footnotesize template$<$size\+\_\+t I, typename CharT , typename... Args$>$ }\\std\+::basic\+\_\+ostream$<$ CharT $>$ \& \hyperlink{namespacegriha_1_1details_aa298e5a3200d5b4b8f1833ba2736dabc}{print\+\_\+ip} (std\+::basic\+\_\+ostream$<$ CharT $>$ \&os, const std\+::tuple$<$ Args... $>$ \&ip)
 \item 
@@ -14,13 +18,13 @@
 \subsection{Function Documentation}
 \index{griha\+::details@{griha\+::details}!print\+\_\+ip@{print\+\_\+ip}}
 \index{print\+\_\+ip@{print\+\_\+ip}!griha\+::details@{griha\+::details}}
-\subsubsection[{\texorpdfstring{print\+\_\+ip(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, Fwd\+It f, Fwd\+It l)}{print_ip(std::basic_ostream< CharT > &os, FwdIt f, FwdIt l)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Fwd\+It , typename CharT $>$ std\+::basic\+\_\+ostream$<$CharT$>$\& griha\+::details\+::print\+\_\+ip (
+\subsubsection[{\texorpdfstring{print\+\_\+ip(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, It f, It l)}{print_ip(std::basic_ostream< CharT > &os, It f, It l)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT , typename It $>$ std\+::basic\+\_\+ostream$<$CharT$>$\& griha\+::details\+::print\+\_\+ip (
 \begin{DoxyParamCaption}
 \item[{std\+::basic\+\_\+ostream$<$ CharT $>$ \&}]{os, }
-\item[{Fwd\+It}]{f, }
-\item[{Fwd\+It}]{l}
+\item[{It}]{f, }
+\item[{It}]{l}
 \end{DoxyParamCaption}
-)}\hypertarget{namespacegriha_1_1details_a0bb6a1ac333160e0c516e3c6af2ea8f6}{}\label{namespacegriha_1_1details_a0bb6a1ac333160e0c516e3c6af2ea8f6}
+)}\hypertarget{namespacegriha_1_1details_aab9e1f097918e95aff6ba4c040865632}{}\label{namespacegriha_1_1details_aab9e1f097918e95aff6ba4c040865632}
 \index{griha\+::details@{griha\+::details}!print\+\_\+ip@{print\+\_\+ip}}
 \index{print\+\_\+ip@{print\+\_\+ip}!griha\+::details@{griha\+::details}}
 \subsubsection[{\texorpdfstring{print\+\_\+ip(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, const std\+::tuple$<$ Args... $>$ \&ip)}{print_ip(std::basic_ostream< CharT > &os, const std::tuple< Args... > &ip)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t I, typename CharT , typename... Args$>$ std\+::basic\+\_\+ostream$<$CharT$>$\& griha\+::details\+::print\+\_\+ip (
@@ -37,3 +41,19 @@
 \item[{const std\+::tuple$<$ Args... $>$ \&}]{ip}
 \end{DoxyParamCaption}
 )}\hypertarget{namespacegriha_1_1details_ae436fa4f3b9609914597737b2a61abc9}{}\label{namespacegriha_1_1details_ae436fa4f3b9609914597737b2a61abc9}
+\index{griha\+::details@{griha\+::details}!print\+\_\+ip\+\_\+first\+\_\+part@{print\+\_\+ip\+\_\+first\+\_\+part}}
+\index{print\+\_\+ip\+\_\+first\+\_\+part@{print\+\_\+ip\+\_\+first\+\_\+part}!griha\+::details@{griha\+::details}}
+\subsubsection[{\texorpdfstring{print\+\_\+ip\+\_\+first\+\_\+part(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, const T \&value)}{print_ip_first_part(std::basic_ostream< CharT > &os, const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT , typename T $>$ std\+::basic\+\_\+ostream$<$CharT$>$\& griha\+::details\+::print\+\_\+ip\+\_\+first\+\_\+part (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ CharT $>$ \&}]{os, }
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacegriha_1_1details_a966af4f61766b1644d2221093035aa94}{}\label{namespacegriha_1_1details_a966af4f61766b1644d2221093035aa94}
+\index{griha\+::details@{griha\+::details}!print\+\_\+ip\+\_\+part@{print\+\_\+ip\+\_\+part}}
+\index{print\+\_\+ip\+\_\+part@{print\+\_\+ip\+\_\+part}!griha\+::details@{griha\+::details}}
+\subsubsection[{\texorpdfstring{print\+\_\+ip\+\_\+part(std\+::basic\+\_\+ostream$<$ Char\+T $>$ \&os, const T \&value)}{print_ip_part(std::basic_ostream< CharT > &os, const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename CharT , typename T $>$ std\+::basic\+\_\+ostream$<$CharT$>$\& griha\+::details\+::print\+\_\+ip\+\_\+part (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ CharT $>$ \&}]{os, }
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacegriha_1_1details_a598409443fccf1540c197b012f836d5f}{}\label{namespacegriha_1_1details_a598409443fccf1540c197b012f836d5f}

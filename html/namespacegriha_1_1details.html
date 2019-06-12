@@ -94,9 +94,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0bb6a1ac333160e0c516e3c6af2ea8f6"><td class="memTemplParams" colspan="2">template&lt;typename FwdIt , typename CharT &gt; </td></tr>
-<tr class="memitem:a0bb6a1ac333160e0c516e3c6af2ea8f6"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegriha_1_1details.html#a0bb6a1ac333160e0c516e3c6af2ea8f6">print_ip</a> (std::basic_ostream&lt; CharT &gt; &amp;os, FwdIt f, FwdIt l)</td></tr>
-<tr class="separator:a0bb6a1ac333160e0c516e3c6af2ea8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966af4f61766b1644d2221093035aa94"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename T &gt; </td></tr>
+<tr class="memitem:a966af4f61766b1644d2221093035aa94"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegriha_1_1details.html#a966af4f61766b1644d2221093035aa94">print_ip_first_part</a> (std::basic_ostream&lt; CharT &gt; &amp;os, const T &amp;value)</td></tr>
+<tr class="separator:a966af4f61766b1644d2221093035aa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598409443fccf1540c197b012f836d5f"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename T &gt; </td></tr>
+<tr class="memitem:a598409443fccf1540c197b012f836d5f"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegriha_1_1details.html#a598409443fccf1540c197b012f836d5f">print_ip_part</a> (std::basic_ostream&lt; CharT &gt; &amp;os, const T &amp;value)</td></tr>
+<tr class="separator:a598409443fccf1540c197b012f836d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9e1f097918e95aff6ba4c040865632"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename It &gt; </td></tr>
+<tr class="memitem:aab9e1f097918e95aff6ba4c040865632"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegriha_1_1details.html#aab9e1f097918e95aff6ba4c040865632">print_ip</a> (std::basic_ostream&lt; CharT &gt; &amp;os, It f, It l)</td></tr>
+<tr class="separator:aab9e1f097918e95aff6ba4c040865632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa298e5a3200d5b4b8f1833ba2736dabc"><td class="memTemplParams" colspan="2">template&lt;size_t I, typename CharT , typename... Args&gt; </td></tr>
 <tr class="memitem:aa298e5a3200d5b4b8f1833ba2736dabc"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegriha_1_1details.html#aa298e5a3200d5b4b8f1833ba2736dabc">print_ip</a> (std::basic_ostream&lt; CharT &gt; &amp;os, const std::tuple&lt; Args... &gt; &amp;ip)</td></tr>
 <tr class="separator:aa298e5a3200d5b4b8f1833ba2736dabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,11 +111,11 @@ Functions</h2></td></tr>
 <tr class="separator:ae436fa4f3b9609914597737b2a61abc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a0bb6a1ac333160e0c516e3c6af2ea8f6"></a>
+<a class="anchor" id="aab9e1f097918e95aff6ba4c040865632"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename FwdIt , typename CharT &gt; </div>
+template&lt;typename CharT , typename It &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::basic_ostream&lt;CharT&gt;&amp; griha::details::print_ip </td>
@@ -120,13 +126,13 @@ template&lt;typename FwdIt , typename CharT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FwdIt&#160;</td>
+          <td class="paramtype">It&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FwdIt&#160;</td>
+          <td class="paramtype">It&#160;</td>
           <td class="paramname"><em>l</em>&#160;</td>
         </tr>
         <tr>
@@ -184,6 +190,62 @@ template&lt;typename CharT , typename... Args&gt; </div>
           <td></td>
           <td class="paramtype">const std::tuple&lt; Args... &gt; &amp;&#160;</td>
           <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a966af4f61766b1644d2221093035aa94"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::basic_ostream&lt;CharT&gt;&amp; griha::details::print_ip_first_part </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; CharT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a598409443fccf1540c197b012f836d5f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::basic_ostream&lt;CharT&gt;&amp; griha::details::print_ip_part </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; CharT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
